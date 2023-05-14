@@ -1,0 +1,140 @@
+@import '../../Styles.scss';
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(135, 206, 235);
+  .container {
+    font-family: 'Lexend', sans-serif;
+    width: 60%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 400px;
+    overflow: hidden;
+    @include mobile {
+      width: 80%;
+    }
+    @include tablet {
+      width: 90%;
+    }
+    .left {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+
+      h2 {
+        color: rebeccapurple;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          padding: 5px;
+          border: none;
+          border-bottom: 1px solid gray;
+          font-family: 'Lexend', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          &:focus {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid gray;
+          }
+        }
+
+        span {
+          font-size: 12px;
+          @include tablet {
+            display: none;
+          }
+          @include large {
+            display: none;
+          }
+        }
+
+        .error {
+          color: red;
+          font-size: 12px;
+        }
+        button {
+          width: 50%;
+          padding: 5px 10px;
+          color: white;
+          background-color: rebeccapurple;
+          font-family: 'Lexend', sans-serif;
+          border: none;
+          cursor: pointer;
+          font-weight: 400;
+          font-size: 14px;
+          transition: all ease-in-out 0.25s;
+          &:hover {
+            border: 1px solid rebeccapurple;
+            background-color: transparent;
+            color: rebeccapurple;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url('https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg');
+      background-size: cover;
+      padding: 50px;
+
+      // Responsiveness
+      @include mobile {
+        display: none;
+      }
+
+      h1 {
+        font-size: 80px;
+        line-height: 0.9;
+        color: white;
+      }
+      p {
+        font-size: 14px;
+        // font-weight: 400;
+        line-height: 1.2;
+        color: #ccc;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #ccc;
+      }
+      button {
+        width: 50%;
+        padding: 5px 10px;
+        color: rebeccapurple;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: 'Lexend', sans-serif;
+        transition: all ease-in-out 0.25s;
+        &:hover {
+          border: 1px solid white;
+          background-color: transparent;
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../Styles.scss';
+
+.posts {
+  flex: 9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-family: 'Lora', serif;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}

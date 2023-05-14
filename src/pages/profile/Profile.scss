@@ -1,0 +1,140 @@
+@import '../../Styles.scss';
+
+.react-confirm-alert-overlay {
+  .react-confirm-alert {
+    font-family: 'Lexend', sans-serif;
+    .react-confirm-alert-body {
+      font-family: 'Lexend', sans-serif;
+      // h1 {
+      // }
+      .react-confirm-alert-button-group {
+        button {
+          font-family: 'Lexend', sans-serif;
+          &:first-child {
+            background-color: tomato;
+          }
+        }
+      }
+      @include mobile {
+        width: auto;
+      }
+      @include tablet {
+        width: auto;
+      }
+    }
+  }
+}
+
+.profileContainer {
+  margin: 10px;
+  display: flex;
+
+  .profile {
+    flex: 9;
+
+    display: flex;
+    flex-direction: column;
+    .profileTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Lexend', sans-serif;
+      color: #666;
+
+      h2 {
+        span {
+          color: rebeccapurple;
+        }
+      }
+
+      button {
+        padding: 4px 8px;
+        border: none;
+        cursor: pointer;
+        background-color: tomato;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        transition: all ease-in-out 0.25s;
+
+        &:hover {
+          background-color: transparent;
+          border: 1px solid tomato;
+          color: tomato;
+        }
+      }
+    }
+    form {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      span {
+        font-family: 'Lexend', sans-serif;
+      }
+      .profileFileInputs {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 20%;
+          object-fit: cover;
+        }
+
+        label {
+          width: 20px;
+          height: 20px;
+          border: 1px solid rebeccapurple;
+          border-radius: 50%;
+
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .profileTextsInput {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+
+        label {
+          font-family: 'Lexend', sans-serif;
+        }
+
+        input {
+          font-family: 'Lexend', sans-serif;
+          font-size: 14px;
+          padding: 4px;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid lightgray;
+        }
+      }
+
+      button {
+        align-self: center;
+        padding: 6px 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: rebeccapurple;
+        border: none;
+        color: white;
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        transition: all ease-in-out 0.25s;
+
+        &:hover {
+          background-color: transparent;
+          border: 1px solid rebeccapurple;
+          color: rebeccapurple;
+        }
+      }
+    }
+  }
+}

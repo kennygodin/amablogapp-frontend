@@ -1,0 +1,39 @@
+@import '../../Styles.scss';
+
+.post {
+  .postImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .postDetails {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend', sans-serif;
+
+    h3 {
+      color: #666;
+      align-self: center;
+      cursor: pointer;
+    }
+    span {
+      color: #666;
+      align-self: center;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 12px;
+    }
+    p {
+      font-family: 'Lora', serif;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
